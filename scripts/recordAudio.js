@@ -2,9 +2,8 @@ var audio = document.querySelector('audio');
 var constraints = { audio: true };
 
 navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
-    var mediaRecorder = new MediaRecorder(stream);
-    var chunks = [];
-    MediaRecorder.stop();
+  var mediaRecorder = new MediaRecorder(stream);
+  var chunks = [];
 
   mediaRecorder.addEventListener('dataavailable', function (event) {
     chunks.push(event.data);
@@ -14,6 +13,9 @@ navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
     var blob = new Blob(chunks, { type: 'audio/ogg; codecs=opus' });
     var url = URL.createObjectURL(blob);
     audio.src = url;
+    var para = document.createElement("p")
+    para.innerText = "recording finished"
+    document.body.appendChild(para)
     chunks = []; // reset
   });
 
