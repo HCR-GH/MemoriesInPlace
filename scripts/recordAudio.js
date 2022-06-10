@@ -14,7 +14,7 @@ navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
     var url = URL.createObjectURL(blob);
     audio.src = url;
     var para = document.createElement("p")
-    para.innerText = "recording finished"
+    para.innerText = "recording finished v2"
     document.body.appendChild(para)
     chunks = []; // reset
   });
