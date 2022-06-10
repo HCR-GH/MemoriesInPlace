@@ -18,6 +18,9 @@
       var blob = new Blob(chunks, { type: 'audio/ogg; codecs=opus' });
       var url = URL.createObjectURL(blob);
       audio.src = url;
+      var para = document.createElement("p")
+      para.innerText = "recording finished"
+      document.body.appendChild(para)
       chunks = []; // reset
     });
 
