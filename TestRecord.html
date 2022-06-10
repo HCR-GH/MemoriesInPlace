@@ -15,7 +15,7 @@ var constraints = { audio: true };
 navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
     var mediaRecorder = new MediaRecorder(stream);
     var chunks = [];
-    MediaRecorder.stop();
+    mediaRecorder.stop();
 
   mediaRecorder.addEventListener('dataavailable', function (event) {
     chunks.push(event.data);
