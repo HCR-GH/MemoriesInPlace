@@ -1,0 +1,27 @@
+var audio = document.querySelector('audio');
+var constraints = { audio: true };
+
+navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
+    var mediaRecorder = new MediaRecorder(stream);
+    var chunks = [];
+    MediaRecorder.stop();
+
+  mediaRecorder.addEventListener('dataavailable', function (event) {
+    chunks.push(event.data);
+  });
+
+  mediaRecorder.addEventListener('stop', function () {
+    var blob = new Blob(chunks, { type: 'audio/ogg; codecs=opus' });
+    var url = URL.createObjectURL(blob);
+    audio.src = url;
+    chunks = []; // reset
+  });
+
+  document.getElementById('record').addEventListener('click', function () {
+    mediaRecorder.start();
+  });
+
+  document.getElementById('stop').addEventListener('click', function () {
+    mediaRecorder.stop();
+  });
+});
