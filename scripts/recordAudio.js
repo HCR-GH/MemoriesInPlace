@@ -1,7 +1,7 @@
 var audio = document.querySelector('audio');
 var constraints = { audio: true };
 
-const recordButton = document.getElementById('record').addEventListener('click', function () {
+const recordButton = document.getElementById('mic').addEventListener('click', function () {
   
 
 navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
