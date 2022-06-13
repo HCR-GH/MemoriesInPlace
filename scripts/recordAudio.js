@@ -1,6 +1,9 @@
 var audio = document.querySelector('audio');
 var constraints = { audio: true };
 
+document.getElementById('mic').addEventListener('click', function () {
+  
+
 navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
   var mediaRecorder = new MediaRecorder(stream);
   const downloadLink = document.getElementById('download');
@@ -32,4 +35,5 @@ navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
   document.getElementById('stop').addEventListener('click', function () {
     mediaRecorder.stop();
   });
+});
 });
