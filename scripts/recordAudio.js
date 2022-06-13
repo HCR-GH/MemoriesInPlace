@@ -1,8 +1,7 @@
 var audio = document.querySelector('audio');
 var constraints = { audio: true };
 
-const recordButton = document.getElementById('record')
-recordButton.onclick = function () {
+const recordButton = document.getElementById('record').addEventListener('click', function () {
   
 
 navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
@@ -25,16 +24,16 @@ navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
     downloadLink.download = test2.wav
     chunks = []; // reset
   });
-/*
+
   document.getElementById('record').addEventListener('click', function () {
     mediaRecorder.start();
     var para = document.createElement("p")
     para.innerText = "Recording Started"
     document.body.appendChild(para)
   });
-*/
+
   document.getElementById('stop').addEventListener('click', function () {
     mediaRecorder.stop();
   });
 });
-};
+});
