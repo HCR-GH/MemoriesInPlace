@@ -6,6 +6,6 @@
  
  It will be made to look nicer in due course!
  
- Memories in Place is being created as part of my PhD research at Newcastle University in collaboration with [Remebering the Past](https://www.rememberingthepast.co.uk/)
+ Memories in Place is being created as part of my PhD research at Newcastle University in collaboration with [Remembering the Past](https://www.rememberingthepast.co.uk/)
  
  
