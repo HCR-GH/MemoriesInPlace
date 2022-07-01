@@ -1,8 +1,31 @@
-<h2>Testing Page 1.1</h2>
-<p> Test Memory of Linskill School</p>
-<audio controls autoplay controlslist="nodownload" style="width: 1000px;">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.audioPlayer {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.unsupported {
+    font-size: larger;
+    color: darkred;
+}
+</style>
+</head>
+
+
+<h2 style="color: blue">Linskill School Bungalow</h2>
+<div>
+<p>Listen to this memory of lessons in the bungalow attached to Linskill School. The bungalow is now used as council offices.</p>
+<audio controls autoplay controlslist="nodownload" class="audioPlayer">
 <source src="Audio/LinskillSchoolTest.mp3" type="audio/mpeg">
-Sorry it looks like your browser doesn't support this audio
+<p class="unsupported">Sorry it looks like your browser doesn't support this audio</p>
 </audio>
-<p>If audio doesn't start automatically press play to listen
+<p>If the audio doesn't start automatically press the play button to listen
 </p>
+
+
+
+</html>
