@@ -1,0 +1,30 @@
+{
+  "name": "memoriesinplace",
+  "version": "1.0.0",
+  "description": "This repository contains materials to power the GitHubPages website [Memories in Place](https://hcr-gh.github.io/MemoriesInPlace/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HCR-GH/MemoriesInPlace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HCR-GH/MemoriesInPlace/issues"
+  },
+  "homepage": "https://github.com/HCR-GH/MemoriesInPlace#readme",
+  "dependencies": {
+    "read-pkg-up": "^9.1.0",
+    "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1"
+  }
+}
