@@ -5,22 +5,22 @@
 
 // Set your brand colors
 $blue: #1A5276;
-$pink: #FA7C91;
+$dark-red: #4e0a16;
 $brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
+$white: white;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
+$family-secondary: "Helvetica", sans-serif;
 $grey-dark: $brown;
-$grey-light: $beige-light;
+$grey-light: $white;
 $primary: $blue;
-$link: $pink;
+$link: $dark-red;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;

@@ -7,15 +7,18 @@
     <title>Linskill Bungalow | Memories in Place</title>
     <link rel="stylesheet" href="css/mystyles.css">
 <style>
-.audioPlayer {
-    width: 50%;
+  .audioPlayer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  audio::-webkit-media-controls-play-button {
+  background-color: #0EBC13;
+  border-radius: 50%;
 }
 .unsupported {
     font-size: larger;
-    color: darkred;
+    color: white;
 }
 
 </style>
@@ -31,17 +34,20 @@
       </section>
 <div class ="section is-medium">
   
-<p class="title is-2">Linskill School Bungalow</p>
+<p class="title has-text-primary is-3">Linskill School Bungalow</p>
 </div>
 
-<div>
+<div class="container mb-4 ml-4 is-size-4 is-family-secondary has-text-black">
 <p>Listen to this memory of lessons in the bungalow attached to Linskill School. The bungalow is now used as council offices.</p>
+</div>
+<div class="notification is-link">
 <audio controls autoplay controlslist="nodownload" class="audioPlayer">
 <source src="Audio/LinskillSchoolTest.mp3" type="audio/mpeg">
-<p class="unsupported">Sorry it looks like your browser doesn't support this audio</p>
 </audio>
-<p>If the audio doesn't start automatically press the play button to listen
-</p>
+</div>
+<div class="container ml-4 is-size-4 is-family-secondary has-text-black">
+  <p>If the audio doesn't start automatically press the play button to listen</p>
+  </div>
 
 
 
