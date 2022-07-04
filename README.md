@@ -7,5 +7,7 @@
  It will be made to look nicer in due course!
  
  Memories in Place is being created as part of my PhD research at Newcastle University in collaboration with [Remembering the Past](https://www.rememberingthepast.co.uk/)
+
+ All files in the Audio folder are the copyright of Remembering the Past and are used here with permission.
  
  
