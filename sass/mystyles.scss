@@ -6,6 +6,7 @@
 // Set your brand colors
 $blue: #1A5276;
 $dark-red: #4e0a16;
+$light-blue: #87CEFA;
 $brown: #757763;
 $white: white;
 
@@ -15,7 +16,8 @@ $family-secondary: "Helvetica", sans-serif;
 $grey-dark: $brown;
 $grey-light: $white;
 $primary: $blue;
-$link: $dark-red;
+$link: $light-blue;
+$danger: $dark-red;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
