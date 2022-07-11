@@ -4,6 +4,12 @@
     margin-right: auto;
     width: 100%;
   }
+  .audioPlayerRec {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
   audio::-webkit-media-controls-play-button {
   background-color: #0EBC13;
   border-radius: 50%;

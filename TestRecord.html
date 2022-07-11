@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Linskill Bungalow | Memories in Place</title>
+    <title>Leave your own memory | Memories in Place</title>
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="css/extrastyles.css">
-    <script src="js/audio-recording.js"></script>
-<script src="js/index.js"></script> 
+
+
 </head>
 <body>
   <div id="wrapper">
@@ -19,35 +19,45 @@
           
           </div>
       </section>
-<div class ="container ml-4 mt-3 mb-2 mr-4">
+
+      <div class ="container ml-4 mt-3 mb-2 mr-4">
   
-<p class="title has-text-primary is-2">Record your own memory</p>
-</div>
+        <p class="title has-text-primary is-2">Record your own memory</p>
+        </div>
+        
+        
+      
+        
+        
+        <div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
+        <p>Press the record button to start your recording and the stop button when you are done. You can listen back to your recording in the audio player below.
+            If you'd like to re-do your recording simply press record again and your new recording will replace your previous one. 
+            Don't forget to allow microphone permissions.</p>
+        </div>
+        <div class="container mb-4 ml-4 mr-4 mt-4">
+            <div class="buttons is-centered">
+            <button id="record"  class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Record</button>
+            <button id="stop" class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Stop</button>
+        
+          </div></div>
+         
+        
+        
+        <div class="container ml-4 mr-4">
+
+        <audio controls autoplay controlslist="nodownload" class="audioPlayerRec">
+        <p class="unsupported">Sorry your browser doesn't support this audio content.</p>
+        </audio>
+        </div></div>
+        <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
+          <p>If you'd like to save your recording use the button below to download it to your device</p>
+          <div class="buttons is-centered">
+          <a id="download" class="button is-family-secondary is-link is-rounded is-medium" download>Download</a>
+          </div>
+          </div>
 
 
-<a id="download" download>Download</a>
 
-
-<div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
-<p>Press the record button to start your recording and the stop button when you are done. You can listen back to your recording in the audio player below.
-    If you'd like to re-do your recording simply press record again and your new recording will replace your previous one. 
-    Don't forget to allow microphone permissions.</p>
-</div>
-<div class="container mb-4 ml-4 mr-4 mt-4">
-    <div class="buttons is-centered">
-    <button id="record" class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Record</button>
-    <button id="stop" class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Stop</button>
-
-  </div></div>
-<div class="container ml-6 mr-6">
-<div class="notification is-danger">
-<audio controls autoplay controlslist="nodownload" class="audioPlayer">
-<p class="unsupported">Sorry your browser doesn't support this audio content.</p>
-</audio>
-</div></div>
-<div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
-  <p>If the audio doesn't start automatically press the play button to listen.</p>
-  </div>
 
 </div>
 <footer class="footer mt-6">
@@ -60,26 +70,10 @@
 
 </footer>
 
-
+<script src="js/audio-recording.js"></script>
+<script src="js/index.js"></script> 
 
 </body>
 
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
