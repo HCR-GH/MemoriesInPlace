@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 // Set your brand colors
 $midnight: #03045E;
@@ -11,7 +11,7 @@ $brown: #757763;
 $white: white;
 
 // Update Bulma's global variables
-$family-sans-serif: "Californian FB", sans-serif;
+$family-sans-serif: "Crimson Text", serif;
 $family-secondary: "Helvetica", sans-serif;
 $grey-dark: $brown;
 $grey-light: $white;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
 .section {
   padding: 1rem; }
 
@@ -197,7 +197,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Californian FB", sans-serif; }
+  font-family: "Crimson Text", serif; }
 
 code,
 pre {
@@ -4516,13 +4516,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Californian FB", sans-serif !important; }
+  font-family: "Crimson Text", serif !important; }
 
 .is-family-secondary {
   font-family: "Helvetica", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Californian FB", sans-serif !important; }
+  font-family: "Crimson Text", serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
