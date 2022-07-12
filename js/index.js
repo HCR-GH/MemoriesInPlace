@@ -7,6 +7,7 @@ const downloadLink = document.getElementById('download');
 //var recordingControlButtonsContainer = document.getElementsByClassName("recording-contorl-buttons-container")[0];
 var stopRecordingButton = document.getElementById("stop");
 var audio = document.querySelector('audio');
+var inProg = document.getElementById('prog');
 //var cancelRecordingButton = document.getElementsByClassName("cancel-recording-button")[0];
 //var elapsedTimeTag = document.getElementsByClassName("elapsed-time")[0];
 //var closeBrowserNotSupportedBoxButton = document.getElementsByClassName("close-browser-not-supported-box")[0];
@@ -15,7 +16,7 @@ var audio = document.querySelector('audio');
 //var audioElementSource = document.getElementsByClassName("audio-element")[0]
   //  .getElementsByTagName("source")[0];
 //var textIndicatorOfAudiPlaying = document.getElementsByClassName("text-indication-of-audio-playing")[0];
-
+inProg.style.display = "none";
 //Listeners
 
 //Listen to start recording button
@@ -33,17 +34,20 @@ stopRecordingButton.onclick = stopAudioRecording;
 //Listen to when the audio being played ends
 //audioElement.onended = hideTextIndicatorOfAudioPlaying;
 
-/** Displays recording control buttons 
-function handleDisplayingRecordingControlButtons() {
+/** Displays recording control buttons */
+function showRecordinginProgress() {
     //Hide the microphone button that starts audio recording
-    microphoneButton.style.display = "none";
+    inProg.style.display = "block";
 
     //Display the recording control buttons
-    recordingControlButtonsContainer.classList.remove("hide");
+  //  recordingControlButtonsContainer.classList.remove("hide");
 
     //Handle the displaying of the elapsed recording time
-    handleElapsedRecordingTime();*/
-//}
+    //handleElapsedRecordingTime();*/
+}
+function hideRecordinginProgress() {
+    inProg.style.display = "none";
+}
 
 /** Hide the displayed recording control buttons 
 function handleHidingRecordingControlButtons() {
@@ -100,6 +104,8 @@ var elapsedTimeTimer; */
 function startAudioRecording() {
 
     console.log("Recording Audio...");
+    showRecordinginProgress();
+    
 /**
     //If a previous audio recording is playing, pause it
     let recorderAudioIsPlaying = !audioElement.paused; // the paused property tells whether the media element is paused or not
@@ -111,7 +117,9 @@ function startAudioRecording() {
     } */
 
     //start recording using the audio recording API
-    audioRecorder.start() /**
+    audioRecorder.start() 
+
+    /**
         .then(() => { //on success
 
             //store the recording start time to display the elapsed time according to it
@@ -163,6 +171,7 @@ function startAudioRecording() {
 function stopAudioRecording() {
 
     console.log("Stopping Audio Recording...");
+    hideRecordinginProgress();
 
     //stop the recording using the audio recording API
     audioRecorder.stop()
@@ -204,9 +213,7 @@ function playAudio(recorderAudioAsBlob) {
    
     var url = URL.createObjectURL(recorderAudioAsBlob);
     audio.src = url;
-    var para = document.createElement("p")
-    para.innerText = "Recording Finished"
-    document.body.appendChild(para)
+ 
     downloadLink.href = URL.createObjectURL(recorderAudioAsBlob)
     //downloadLink.download = test2.wav
     };
