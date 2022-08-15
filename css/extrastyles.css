@@ -11,8 +11,7 @@
     
   }
   audio::-webkit-media-controls-play-button {
-  background-color: #0EBC13;
-  border-radius: 50%;
+    display: none;
 }
 .unsupported {
     font-size: larger;
