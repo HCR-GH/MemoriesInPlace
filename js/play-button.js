@@ -12,6 +12,11 @@ ctrl.innerHTML = pause ? '<span class="icon-text"><span class="icon"><i class="f
 var method = pause ? 'pause' : 'play'; //if pause is true set method to pause else play
 yourAudio[method](); //calls pause or play (depending on what method is set to)
 
+
 // Prevent Default Action
 return false;
-}; 
+}
+yourAudio.addEventListener('ended', function() {
+    ctrl.innerHTML =  '<span class="icon-text"><span class="icon"><i class="fa-solid fa-circle-play"></i></span><span>Play</span></span>' 
+})
+;
