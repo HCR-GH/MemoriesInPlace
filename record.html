@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 
+
 </head>
 <body>
   <div id="wrapper">
@@ -26,8 +27,7 @@
         <p class="title has-text-primary is-2">Record your own memory</p>
         </div>
         
-        
-      
+
         
         
         <div class="container mb-4 ml-4 mr-4 mt-0 is-size-5 is-family-secondary has-text-black">
@@ -36,7 +36,8 @@
             Don't forget to allow microphone permissions if prompted.</p>
         </div>
         <div class="container mb-4 ml-4 mr-4 mt-4">
-          <div class="buttons is-centered">          <button id="prog" class="button is-family-secondary is-static is-medium is-rounded">Recording in Progress</button>  
+          <div class="buttons is-centered">
+              <button id="prog" class="button is-family-secondary is-static is-medium is-rounded">Recording in Progress</button>
         </div>
             <div class="buttons is-centered">
             <button id="record"  class="button is-family-secondary is-danger is-medium is-outlined is-rounded" >Record</button>
@@ -52,17 +53,48 @@
         <p class="unsupported">Sorry your browser doesn't support this audio content.</p>
         </audio>
         </div></div>
-        <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
-          <p>If you'd like to save your recording use the button below to download it to your device</p>
-          <div class="buttons is-centered">
-          <a id="download" class="button is-family-secondary is-link is-rounded is-medium" download>Download</a>
+
+
+  <div class="container is-fluid mt-4" id="rec-form">
+      <div class="notification is-link">
+          <div class="container ml-4 mr-4 is-size-5 is-family-secondary has-text-black is-fullheight">
+              <p>If you'd like to save your recording use the button below to download it to your device</p>
           </div>
+          <div class="container mt-4 mr-4 ml-4">
+  <div class="field">
+      <label class="label is-family-secondary">Name</label>
+      <div class="control">
+          <input class="input" type="text" placeholder="Text input" id="name">
+      </div>
+  </div>
+          <div class="field">
+              <label class="label is-family-secondary">Email</label>
+              <div class="control">
+                  <input class="input" type="text" placeholder="Text input" id="email">
+              </div>
           </div>
 
+              <div class="field">
+                  <div class="control">
+                      <label class="boxcontainer">Tick here if you are happy to be contacted by email
+                          <input type="checkbox" >
+                          <span class="checkmark"></span>
+                      </label>
+
+                  </div>
+              </div>
 
 
-
+              <div class="buttons is-centered">
+      <a id="saveButton" class="button is-family-secondary is-primary is-rounded is-medium" download>Save</a>
+  </div>
+          <div class="buttons is-centered mt-0">
+              <a id="download" class="button is-family-secondary is-primary  is-rounded is-small" download>Download</a>
+          </div>
+      </div>
+  </div>
 </div>
+
 <footer class="footer mt-6">
 <div class="content has-text-centered has-text-white">
 
@@ -73,8 +105,10 @@
 
 </footer>
 
-<script src="js/audio-recording.js"></script>
-<script src="js/index.js"></script> 
+<script src="../js/audio-recording.js"></script>
+<script src="js/index.js"></script>
+<script src="js/form.js"></script>
+
 
 </body>
 
